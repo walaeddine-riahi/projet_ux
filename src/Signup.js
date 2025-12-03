@@ -16,9 +16,11 @@ function Signup() {
           </Link>
         </div>
         <div className="header-buttons">
-          <button className="btn-publish">Publier un Trajet</button>
-          <Link to="/login">
-            <button className="btn-signup">S'inscrire</button>
+          <Link to="/inscription-etudiant" style={{ textDecoration: "none" }}>
+            <button className="btn-publish">Publier un Trajet</button>
+          </Link>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            <button className="btn-signup">Se connecter</button>
           </Link>
         </div>
       </header>
@@ -57,9 +59,17 @@ function Signup() {
               </label>
             </div>
 
-            <button type="submit" className="submit-btn">
+            <Link
+              to="/inscription-etudiant"
+              className="submit-btn"
+              style={{
+                textDecoration: "none",
+                display: "block",
+                textAlign: "center",
+              }}
+            >
               S'inscrire
-            </button>
+            </Link>
 
             <div className="login-link">
               Vous avez déjà un compte ? <Link to="/login">Se connecter</Link>

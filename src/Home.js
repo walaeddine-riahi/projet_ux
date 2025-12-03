@@ -17,9 +17,9 @@ function Home() {
             </Link>
           </div>
           <nav className="nav-menu">
-            <a href="#accueil" className="nav-link active">
+            <Link to="/" className="nav-link active">
               Accueil
-            </a>
+            </Link>
             <a href="#suivi" className="nav-link">
               Suivi
             </a>
@@ -30,11 +30,18 @@ function Home() {
               Profile
             </a>
           </nav>
+          <Link
+            to="/inscription-etudiant"
+            className="btn-publish"
+            style={{ textDecoration: "none", marginRight: "20px" }}
+          >
+            Publier un Trajet
+          </Link>
           <div className="header-right">
-            <div className="notification-icon">
+            <Link to="/notifications" className="notification-icon">
               <img src="/assets/notification.png" alt="Notifications" />
               <span className="notification-badge">1</span>
-            </div>
+            </Link>
             <div className="user-profile">
               <img
                 src="/assets/profile.png"

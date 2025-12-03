@@ -16,8 +16,10 @@ function Login() {
           </Link>
         </div>
         <div className="header-buttons">
-          <button className="btn-publish">Publier un Trajet</button>
-          <Link to="/signup">
+          <Link to="/inscription-etudiant" style={{ textDecoration: "none" }}>
+            <button className="btn-publish">Publier un Trajet</button>
+          </Link>
+          <Link to="/signup" style={{ textDecoration: "none" }}>
             <button className="btn-signup">S'inscrire</button>
           </Link>
         </div>
@@ -51,9 +53,17 @@ function Login() {
               </a>
             </div>
 
-            <button type="submit" className="submit-btn">
+            <Link
+              to="/"
+              className="submit-btn"
+              style={{
+                textDecoration: "none",
+                display: "block",
+                textAlign: "center",
+              }}
+            >
               Se connecter
-            </button>
+            </Link>
 
             <div className="login-link">
               Vous n'avez pas un compte ? <Link to="/signup">S'inscrire</Link>
