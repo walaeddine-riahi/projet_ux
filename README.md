@@ -413,7 +413,7 @@ project/
 
 #### Login
 
-![Login](screenshots/login.png)
+![Login](screenshots/login.jpeg)
 
 - Interface épurée avec formulaire de connexion
 - Options de connexion sociale
