@@ -36,6 +36,13 @@ function TrajetsQuotidiens() {
             </nav>
           </div>
           <div className="tq-header-right">
+            <Link
+              to="/publish-ride"
+              className="btn-publish"
+              style={{ textDecoration: "none", marginRight: "20px" }}
+            >
+              Publier un Trajet
+            </Link>
             <Link to="/notifications" className="tq-notification-icon">
               <img src="/assets/notification.png" alt="Notifications" />
             </Link>
@@ -192,13 +199,16 @@ function TrajetsQuotidiens() {
             <h4 className="tq-footer-title">Lien Rapides</h4>
             <ul className="tq-footer-links">
               <li>
-                <a href="#accueil">Acceuil</a>
+                <Link to="/">Accueil</Link>
               </li>
               <li>
-                <a href="#publier">Publier un Trajet</a>
+                <Link to="/publish-ride">Publier un Trajet</Link>
               </li>
               <li>
-                <a href="#profil">Mon Profil</a>
+                <Link to="/profile-conducteur">Espace Conducteur</Link>
+              </li>
+              <li>
+                <Link to="/wallet">Mon Portefeuille</Link>
               </li>
             </ul>
           </div>
@@ -207,13 +217,19 @@ function TrajetsQuotidiens() {
             <h4 className="tq-footer-title">Support</h4>
             <ul className="tq-footer-links">
               <li>
-                <a href="#accueil">Acceuil</a>
+                <Link to="/faq">FAQ</Link>
               </li>
               <li>
-                <a href="#publier">Publier un Trajet</a>
+                <Link to="/support">Centre d'Aide</Link>
               </li>
               <li>
-                <a href="#profil">Mon Profil</a>
+                <Link to="/about">À Propos</Link>
+              </li>
+              <li>
+                <Link to="/terms">Conditions d'Utilisation</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Politique de Confidentialité</Link>
               </li>
             </ul>
           </div>

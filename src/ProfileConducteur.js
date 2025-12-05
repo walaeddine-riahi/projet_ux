@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "./ProfileConducteur.css";
 
 function ProfileConducteur() {
-
   return (
     <div className="profile-conducteur-page">
       {/* Header */}
@@ -34,6 +33,13 @@ function ProfileConducteur() {
             </nav>
           </div>
           <div className="pc-header-right">
+            <Link
+              to="/publish-ride"
+              className="btn-publish"
+              style={{ textDecoration: "none", marginRight: "20px" }}
+            >
+              Publier un Trajet
+            </Link>
             <Link to="/notifications" className="pc-notification-icon">
               <img src="/assets/notification.png" alt="Notifications" />
             </Link>
@@ -197,13 +203,16 @@ function ProfileConducteur() {
             <h4 className="pc-footer-title">Lien Rapides</h4>
             <ul className="pc-footer-links">
               <li>
-                <a href="#accueil">Acceuil</a>
+                <Link to="/">Accueil</Link>
               </li>
               <li>
-                <a href="#publier">Publier un Trajet</a>
+                <Link to="/publish-ride">Publier un Trajet</Link>
               </li>
               <li>
-                <a href="#profil">Mon Profil</a>
+                <Link to="/profile-conducteur">Espace Conducteur</Link>
+              </li>
+              <li>
+                <Link to="/wallet">Mon Portefeuille</Link>
               </li>
             </ul>
           </div>
@@ -212,13 +221,19 @@ function ProfileConducteur() {
             <h4 className="pc-footer-title">Support</h4>
             <ul className="pc-footer-links">
               <li>
-                <a href="#accueil">Acceuil</a>
+                <Link to="/faq">FAQ</Link>
               </li>
               <li>
-                <a href="#publier">Publier un Trajet</a>
+                <Link to="/support">Centre d'Aide</Link>
               </li>
               <li>
-                <a href="#profil">Mon Profil</a>
+                <Link to="/about">À Propos</Link>
+              </li>
+              <li>
+                <Link to="/terms">Conditions d'Utilisation</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Politique de Confidentialité</Link>
               </li>
             </ul>
           </div>

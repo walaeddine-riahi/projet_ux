@@ -54,7 +54,7 @@ function Login() {
             </div>
 
             <Link
-              to="/"
+              to="/home"
               className="submit-btn"
               style={{
                 textDecoration: "none",

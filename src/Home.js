@@ -30,14 +30,14 @@ function Home() {
               Profile
             </a>
           </nav>
-          <Link
-            to="/inscription-etudiant"
-            className="btn-publish"
-            style={{ textDecoration: "none", marginRight: "20px" }}
-          >
-            Publier un Trajet
-          </Link>
           <div className="header-right">
+            <Link
+              to="/inscription-etudiant"
+              className="btn-publish"
+              style={{ textDecoration: "none" }}
+            >
+              Publier un Trajet
+            </Link>
             <Link to="/notifications" className="notification-icon">
               <img src="/assets/notification.png" alt="Notifications" />
               <span className="notification-badge">1</span>
@@ -330,13 +330,13 @@ function Home() {
             <h4 className="footer-title">Lien Rapides</h4>
             <ul className="footer-links">
               <li>
-                <a href="#accueil">Acceuil</a>
+                <Link to="/">Accueil</Link>
               </li>
               <li>
-                <a href="#publier">Publier un Trajet</a>
+                <Link to="/publish-ride">Publier un Trajet</Link>
               </li>
               <li>
-                <a href="#profil">Mon Profil</a>
+                <Link to="/profile-conducteur">Mon Profil</Link>
               </li>
             </ul>
           </div>
@@ -345,13 +345,19 @@ function Home() {
             <h4 className="footer-title">Support</h4>
             <ul className="footer-links">
               <li>
-                <a href="#accueil">Acceuil</a>
+                <Link to="/faq">FAQ</Link>
               </li>
               <li>
-                <a href="#publier">Publier un Trajet</a>
+                <Link to="/support">Centre d'Aide</Link>
               </li>
               <li>
-                <a href="#profil">Mon Profil</a>
+                <Link to="/about">À Propos</Link>
+              </li>
+              <li>
+                <Link to="/terms">Conditions d'Utilisation</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Politique de Confidentialité</Link>
               </li>
             </ul>
           </div>
