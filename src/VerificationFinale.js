@@ -3,7 +3,6 @@ import { useState } from "react";
 import "./VerificationFinale.css";
 
 function VerificationFinale() {
-  const [currentStep] = useState(4);
   const [showPopup, setShowPopup] = useState(true);
 
   return (

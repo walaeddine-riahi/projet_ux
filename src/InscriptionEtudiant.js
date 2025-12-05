@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./InscriptionEtudiant.css";
 
 function InscriptionEtudiant() {
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep] = useState(1);
 
   return (
     <div className="inscription-etudiant-page">

@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./TrajetsQuotidiens.css";
 
 function TrajetsQuotidiens() {
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep] = useState(2);
 
   return (
     <div className="trajets-quotidiens-page">

@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "./VerificationInfos.css";
 
 function VerificationInfos() {
-  const [currentStep] = useState(3);
 
   return (
     <div className="verification-infos-page">

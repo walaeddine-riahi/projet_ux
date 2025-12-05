@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "./ProfileConducteur.css";
 
 function ProfileConducteur() {
-  const [currentStep] = useState(4);
 
   return (
     <div className="profile-conducteur-page">
