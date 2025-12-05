@@ -336,7 +336,10 @@ function Home() {
                 <Link to="/publish-ride">Publier un Trajet</Link>
               </li>
               <li>
-                <Link to="/profile-conducteur">Mon Profil</Link>
+                <Link to="/inscription-etudiant">Espace Conducteur</Link>
+              </li>
+              <li>
+                <Link to="/wallet">Mon Portefeuille</Link>
               </li>
             </ul>
           </div>
