@@ -8,17 +8,19 @@ import NotificationsPage from './components/NotificationsPage'
 import RideDetailsPage from './components/RideDetailsPage'
 import DriverProfilePage from './components/DriverProfilePage'
 import RideTrackingPage from './components/RideTrackingPage'
+import ReviewPage from './components/ReviewPage'
 
 function App() {
   const [page, setPage] = useState<PageKey>('home')
 
   const renderPage = () => {
     if (page === 'wallet') return <WalletPage />
-    if (page === 'dashboard') return <DashboardPage />
+    if (page === 'dashboard') return <DashboardPage onNavigate={setPage} />
     if (page === 'notifications') return <NotificationsPage onNavigate={setPage} />
     if (page === 'rideDetails') return <RideDetailsPage onNavigate={setPage} />
     if (page === 'rideTracking') return <RideTrackingPage onNavigate={setPage} />
     if (page === 'driverProfile') return <DriverProfilePage onNavigate={setPage} />
+    if (page === 'reviews') return <ReviewPage onNavigate={setPage} />
     return <HomePage onNavigate={setPage} />
   }
 

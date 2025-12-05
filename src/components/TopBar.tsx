@@ -11,6 +11,7 @@ type PageKey =
   | 'rideDetails'
   | 'driverProfile'
   | 'rideTracking'
+  | 'reviews'
 
 interface TopBarProps {
   currentPage: PageKey
@@ -44,15 +45,24 @@ const TopBar: React.FC<TopBarProps> = ({ currentPage, onNavigate }) => {
           </button>
           <button
             className={
-              currentPage === 'dashboard'
+              currentPage === 'rideTracking'
                 ? 'relative pb-1 text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black'
                 : 'pb-1 text-black/70'
             }
-            onClick={() => onNavigate('dashboard')}
+            onClick={() => onNavigate('rideTracking')}
           >
             Suivi
           </button>
-          <button className="pb-1 text-black/70">Avis</button>
+          <button
+            className={
+              currentPage === 'reviews'
+                ? 'relative pb-1 text-black after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-black'
+                : 'pb-1 text-black/70'
+            }
+            onClick={() => onNavigate('reviews')}
+          >
+            Avis
+          </button>
           <button
             className={
               currentPage === 'driverProfile'

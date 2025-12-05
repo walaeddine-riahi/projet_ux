@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import UserAvatar from './UserAvatar'
 import userAvatarImg from '../assets/user-avatar.png'
+import type { PageKey } from './TopBar'
 
 type TimeFilter = 'week' | 'month' | 'year'
 type ReviewsFilter = 'recent' | 'recommended'
 
-const DashboardPage: React.FC = () => {
+interface DashboardPageProps {
+  onNavigate?: (page: PageKey) => void
+}
+
+const DashboardPage: React.FC<DashboardPageProps> = ({ onNavigate }) => {
   const [timeFilter, setTimeFilter] = useState<TimeFilter>('week')
   const [reviewsFilter, setReviewsFilter] = useState<ReviewsFilter>('recent')
 
@@ -141,7 +146,11 @@ const DashboardPage: React.FC = () => {
               { from: 'ESPRIT', to: 'Mourouj', price: '15DT' },
               { from: 'ESPRIT', to: 'Manouba', price: '15DT' },
             ].map((t, idx) => (
-              <div key={idx} className="flex items-center justify-between px-4 py-3">
+              <button
+                key={idx}
+                className="flex items-center justify-between px-4 py-3 w-full hover:bg-light-pink/30 transition-colors"
+                onClick={() => onNavigate?.('rideTracking')}
+              >
                 <div className="flex items-center gap-3">
                   <div className="w-7 h-7 rounded-full bg-light-pink flex items-center justify-center text-xs">
                     🚗
@@ -154,7 +163,7 @@ const DashboardPage: React.FC = () => {
                   </div>
                 </div>
                 <span className="text-primary-red font-semibold text-xs">{t.price}</span>
-              </div>
+              </button>
             ))}
           </div>
         </section>

@@ -108,8 +108,8 @@ const RideTrackingPage: React.FC<RideTrackingPageProps> = ({ onNavigate }) => {
               Retour
             </button>
             <button
-              className="flex-1 bg-gray-900 text-white rounded-md py-3 font-semibold"
-              onClick={() => onNavigate('dashboard')}
+              className="flex-1 bg-primary-red text-white rounded-md py-3 font-semibold"
+              onClick={() => onNavigate('reviews')}
             >
               Terminer le Trajet
             </button>
