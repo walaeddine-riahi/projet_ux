@@ -43,7 +43,7 @@ export default function Footer() {
               <Link to="/publish-ride">Publier un Trajet</Link>
             </li>
             <li>
-              <Link to="/profile-conducteur">Espace Conducteur</Link>
+              <Link to="/inscription-etudiant">Espace Conducteur</Link>
             </li>
             <li>
               <Link to="/wallet">Mon Portefeuille</Link>
