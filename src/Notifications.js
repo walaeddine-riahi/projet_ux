@@ -21,18 +21,18 @@ function Notifications() {
           </div>
           <div className="notif-header-center">
             <nav className="notif-nav-menu">
-              <Link to="/" className="notif-nav-link">
+              <Link to="/home" className="notif-nav-link">
                 Accueil
               </Link>
-              <a href="#suivi" className="notif-nav-link">
-                Suivi
-              </a>
-              <a href="#avis" className="notif-nav-link">
-                Avis
-              </a>
-              <a href="#profile" className="notif-nav-link active">
-                Profile
-              </a>
+              <Link to="/trajets-quotidiens" className="notif-nav-link">
+                Trajets
+              </Link>
+              <Link to="/notifications" className="notif-nav-link active">
+                Notifications
+              </Link>
+              <Link to="/wallet" className="notif-nav-link">
+                Portefeuille
+              </Link>
             </nav>
           </div>
           <div className="notif-header-right">

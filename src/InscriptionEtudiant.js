@@ -21,18 +21,18 @@ function InscriptionEtudiant() {
           </div>
           <div className="ie-header-center">
             <nav className="ie-nav-menu">
-              <Link to="/" className="ie-nav-link">
+              <Link to="/home" className="ie-nav-link">
                 Accueil
               </Link>
-              <a href="#suivi" className="ie-nav-link">
-                Suivi
-              </a>
-              <a href="#avis" className="ie-nav-link">
-                Avis
-              </a>
-              <a href="#profile" className="ie-nav-link active">
-                Profile
-              </a>
+              <Link to="/trajets-quotidiens" className="ie-nav-link">
+                Trajets
+              </Link>
+              <Link to="/notifications" className="ie-nav-link">
+                Notifications
+              </Link>
+              <Link to="/wallet" className="ie-nav-link">
+                Portefeuille
+              </Link>
             </nav>
           </div>
           <div className="ie-header-right">

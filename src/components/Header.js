@@ -16,18 +16,18 @@ export default function Header() {
         </div>
 
         <nav className="nav-menu">
-          <Link to="/" className="nav-link active">
+          <Link to="/home" className="nav-link">
             Accueil
           </Link>
-          <a href="#suivi" className="nav-link">
-            Suivi
-          </a>
-          <a href="#avis" className="nav-link">
-            Avis
-          </a>
-          <a href="#profile" className="nav-link">
-            Profile
-          </a>
+          <Link to="/trajets-quotidiens" className="nav-link">
+            Trajets
+          </Link>
+          <Link to="/notifications" className="nav-link">
+            Notifications
+          </Link>
+          <Link to="/wallet" className="nav-link">
+            Portefeuille
+          </Link>
         </nav>
 
         <div className="header-right">

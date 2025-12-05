@@ -21,18 +21,18 @@ function InformationsDetailees() {
           </div>
           <div className="id-header-center">
             <nav className="id-nav-menu">
-              <Link to="/" className="id-nav-link">
+              <Link to="/home" className="id-nav-link">
                 Accueil
               </Link>
-              <a href="#suivi" className="id-nav-link">
-                Suivi
-              </a>
-              <a href="#avis" className="id-nav-link">
-                Avis
-              </a>
-              <a href="#profile" className="id-nav-link active">
-                Profile
-              </a>
+              <Link to="/trajets-quotidiens" className="id-nav-link">
+                Trajets
+              </Link>
+              <Link to="/notifications" className="id-nav-link">
+                Notifications
+              </Link>
+              <Link to="/wallet" className="id-nav-link">
+                Portefeuille
+              </Link>
             </nav>
           </div>
           <div className="id-header-right">

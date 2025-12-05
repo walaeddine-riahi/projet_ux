@@ -17,20 +17,27 @@ function WalletPage() {
             </Link>
           </div>
           <nav className="nav-menu">
-            <Link to="/" className="nav-link">
+            <Link to="/home" className="nav-link">
               Accueil
             </Link>
-            <a href="#suivi" className="nav-link">
-              Suivi
-            </a>
-            <a href="#avis" className="nav-link">
-              Avis
-            </a>
-            <a href="#profile" className="nav-link active">
-              Profile
-            </a>
+            <Link to="/trajets-quotidiens" className="nav-link">
+              Trajets
+            </Link>
+            <Link to="/notifications" className="nav-link">
+              Notifications
+            </Link>
+            <Link to="/wallet" className="nav-link active">
+              Portefeuille
+            </Link>
           </nav>
           <div className="header-right">
+            <Link
+              to="/publish-ride"
+              className="btn-publish"
+              style={{ textDecoration: "none", marginRight: "20px" }}
+            >
+              Publier un Trajet
+            </Link>
             <Link to="/notifications" className="notification-icon">
               <img src="/assets/notification.png" alt="Notifications" />
             </Link>

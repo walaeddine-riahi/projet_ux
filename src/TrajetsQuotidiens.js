@@ -21,18 +21,18 @@ function TrajetsQuotidiens() {
           </div>
           <div className="tq-header-center">
             <nav className="tq-nav-menu">
-              <Link to="/" className="tq-nav-link">
+              <Link to="/home" className="tq-nav-link">
                 Accueil
               </Link>
-              <a href="#suivi" className="tq-nav-link">
-                Suivi
-              </a>
-              <a href="#avis" className="tq-nav-link">
-                Avis
-              </a>
-              <a href="#profile" className="tq-nav-link active">
-                Profile
-              </a>
+              <Link to="/trajets-quotidiens" className="tq-nav-link active">
+                Trajets
+              </Link>
+              <Link to="/notifications" className="tq-nav-link">
+                Notifications
+              </Link>
+              <Link to="/wallet" className="tq-nav-link">
+                Portefeuille
+              </Link>
             </nav>
           </div>
           <div className="tq-header-right">

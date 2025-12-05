@@ -18,18 +18,18 @@ function VerificationInfos() {
           </div>
           <div className="vi-header-center">
             <nav className="vi-nav-menu">
-              <Link to="/" className="vi-nav-link">
+              <Link to="/home" className="vi-nav-link">
                 Accueil
               </Link>
-              <a href="#suivi" className="vi-nav-link">
-                Suivi
-              </a>
-              <a href="#avis" className="vi-nav-link">
-                Avis
-              </a>
-              <a href="#profile" className="vi-nav-link active">
-                Profile
-              </a>
+              <Link to="/trajets-quotidiens" className="vi-nav-link">
+                Trajets
+              </Link>
+              <Link to="/notifications" className="vi-nav-link">
+                Notifications
+              </Link>
+              <Link to="/wallet" className="vi-nav-link">
+                Portefeuille
+              </Link>
             </nav>
           </div>
           <div className="vi-header-right">

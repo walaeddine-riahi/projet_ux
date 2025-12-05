@@ -18,18 +18,18 @@ function ProfileConducteur() {
           </div>
           <div className="pc-header-center">
             <nav className="pc-nav-menu">
-              <Link to="/" className="pc-nav-link">
+              <Link to="/home" className="pc-nav-link">
                 Accueil
               </Link>
-              <a href="#suivi" className="pc-nav-link">
-                Suivi
-              </a>
-              <a href="#avis" className="pc-nav-link">
-                Avis
-              </a>
-              <a href="#profile" className="pc-nav-link active">
-                Profile
-              </a>
+              <Link to="/trajets-quotidiens" className="pc-nav-link">
+                Trajets
+              </Link>
+              <Link to="/notifications" className="pc-nav-link">
+                Notifications
+              </Link>
+              <Link to="/wallet" className="pc-nav-link">
+                Portefeuille
+              </Link>
             </nav>
           </div>
           <div className="pc-header-right">

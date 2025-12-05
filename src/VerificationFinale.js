@@ -21,18 +21,18 @@ function VerificationFinale() {
           </div>
           <div className="vf-header-center">
             <nav className="vf-nav-menu">
-              <Link to="/" className="vf-nav-link">
+              <Link to="/home" className="vf-nav-link">
                 Accueil
               </Link>
-              <a href="#suivi" className="vf-nav-link">
-                Suivi
-              </a>
-              <a href="#avis" className="vf-nav-link">
-                Avis
-              </a>
-              <a href="#profile" className="vf-nav-link active">
-                Profile
-              </a>
+              <Link to="/trajets-quotidiens" className="vf-nav-link">
+                Trajets
+              </Link>
+              <Link to="/notifications" className="vf-nav-link">
+                Notifications
+              </Link>
+              <Link to="/wallet" className="vf-nav-link">
+                Portefeuille
+              </Link>
             </nav>
           </div>
           <div className="vf-header-right">
