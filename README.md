@@ -1,75 +1,70 @@
-# CovAct - Plateforme de Covoiturage
+# Getting Started with Create React App
 
-Application React de covoiturage développée avec Create React App, TypeScript et Tailwind CSS.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 🚀 Technologies
+## Available Scripts
 
-- **React 18.2.0** - Bibliothèque UI
-- **TypeScript** - Typage statique
-- **Create React App** - Outil de build et configuration
-- **Tailwind CSS** - Framework CSS utility-first
+In the project directory, you can run:
 
-## 📦 Installation
+### `npm start`
 
-```bash
-npm install
-```
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🛠️ Développement
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Lancer le serveur de développement :
+### `npm test`
 
-```bash
-npm start
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-L'application sera accessible sur `http://localhost:3000`
+### `npm run build`
 
-## 🏗️ Build
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Créer une build de production :
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```bash
-npm run build
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Les fichiers seront générés dans le dossier `build/`
+### `npm run eject`
 
-## 🧪 Tests
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Lancer les tests :
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-```bash
-npm test
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## 📁 Structure du Projet
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-```
-public/
-├── index.html          # Template HTML
-src/
-├── components/         # Composants React
-├── assets/            # Images et ressources statiques
-├── App.tsx            # Composant principal
-├── index.tsx          # Point d'entrée
-└── index.css          # Styles globaux
-```
+## Learn More
 
-## 🎨 Configuration Tailwind
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Les couleurs personnalisées sont définies dans `tailwind.config.js` :
-- `primary-red`: #A50B0B
-- `light-pink`: #FFEEEE
-- `light-gray`: #FFFBFB
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## 📝 Scripts Disponibles
+### Code Splitting
 
-- `npm start` - Démarre le serveur de développement
-- `npm run build` - Crée une build de production
-- `npm test` - Lance les tests
-- `npm run eject` - Éjecte la configuration (irréversible)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## ⚠️ Note
+### Analyzing the Bundle Size
 
-Ce projet utilise Create React App. Pour personnaliser la configuration webpack, PostCSS, etc., vous pouvez utiliser `npm run eject`, mais cette action est irréversible.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
