@@ -1,6 +1,7 @@
 import React from 'react'
 import type { PageKey } from './TopBar'
 import userAvatar from '../assets/user-avatar.png'
+import mapImage from '../assets/tracking-map.png'
 
 interface RideTrackingPageProps {
   onNavigate: (page: PageKey) => void
@@ -20,7 +21,13 @@ const RideTrackingPage: React.FC<RideTrackingPageProps> = ({ onNavigate }) => {
 
         <div className="space-y-5">
           <section className="bg-white border border-border-gray rounded-xl overflow-hidden">
-            <div className="h-[210px] bg-cover bg-center" style={{ backgroundImage: "url('https://static.codia.ai/image/2025-12-04/sb2O8tq8jV.png')" }} />
+            <div className="h-[210px] bg-cover bg-center">
+              <img 
+                src={mapImage} 
+                alt="Carte du trajet" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </section>
 
           <section className="bg-white border border-border-gray rounded-xl p-4">
