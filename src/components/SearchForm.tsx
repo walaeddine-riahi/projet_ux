@@ -70,7 +70,7 @@ const SearchForm: React.FC = () => {
             <div className="relative">
               <input 
                 type="text" 
-                placeholder="jj/mm/yyyy"
+                placeholder="Nombre de passagers"
                 className="w-full h-10 pl-12 pr-12 border-2 border-stroke-gray rounded-md bg-white text-lg font-light"
               />
               <img 

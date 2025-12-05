@@ -2,6 +2,7 @@ import React from 'react'
 import UserAvatar from './UserAvatar'
 import userAvatarImg from '../assets/user-avatar.png'
 import notificationLogo from '../assets/notification-logo.svg'
+import { IMAGE_URLS } from '../constants'
 
 type PageKey =
   | 'home'
@@ -25,7 +26,7 @@ const TopBar: React.FC<TopBarProps> = ({ currentPage, onNavigate }) => {
         {/* Left: logo */}
         <div className="flex items-center">
           <img
-            src="https://static.codia.ai/image/2025-12-04/RHTuzHRcFA.png"
+            src={IMAGE_URLS.LOGO}
             alt="Cov'Act logo"
             className="h-10 w-auto"
           />

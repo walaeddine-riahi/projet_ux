@@ -13,13 +13,15 @@ const sizeClasses: Record<NonNullable<UserAvatarProps['size']>, string> = {
 }
 
 const UserAvatar: React.FC<UserAvatarProps> = ({ name, size = 'sm', src }) => {
+  const [imageError, setImageError] = React.useState(false)
   const sizeClass = sizeClasses[size]
 
-  if (src) {
+  if (src && !imageError) {
     return (
       <img
         src={src}
         alt={name}
+        onError={() => setImageError(true)}
         className={`${sizeClass} rounded-full object-cover border-[3px] border-orange-200`}
       />
     )
