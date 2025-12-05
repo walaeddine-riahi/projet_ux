@@ -69,13 +69,15 @@ function ProfileConducteur() {
           <div className="pc-step-line completed"></div>
           <div className="pc-step completed">
             <div className="pc-step-number">3</div>
+            <div className="pc-step-label-below-single">
+              Verification d'informations
+            </div>
           </div>
           <div className="pc-step-line inactive"></div>
           <div className="pc-step inactive">
             <div className="pc-step-number">4</div>
           </div>
         </div>
-        <div className="pc-step-label-below">Verification d'informations</div>
       </div>
 
       {/* Main Content */}

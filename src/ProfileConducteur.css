@@ -162,6 +162,28 @@
   background-color: #d0d0d0;
 }
 
+.pc-step-label-below-single {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: var(--color-black);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.pc-step-label-above {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: var(--color-black);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 .pc-step-label-below {
   text-align: center;
   width: 100%;

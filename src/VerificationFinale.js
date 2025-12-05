@@ -76,9 +76,11 @@ function VerificationFinale() {
           <div className="vf-step-line inactive"></div>
           <div className="vf-step active">
             <div className="vf-step-number">4</div>
+            <div className="vf-step-label-below-single">
+              vérification finale
+            </div>
           </div>
         </div>
-        <div className="vf-step-label-below">vérification finale</div>
       </div>
 
       {/* Main Content */}
