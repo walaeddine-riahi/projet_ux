@@ -2,19 +2,19 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
 } from "react-router-dom";
-import Home from "./Home";
-import Login from "./Login";
-import Signup from "./Signup";
-import InscriptionEtudiant from "./InscriptionEtudiant";
-import TrajetsQuotidiens from "./TrajetsQuotidiens";
-import VerificationInfos from "./VerificationInfos";
-import VerificationFinale from "./VerificationFinale";
-import ProfileConducteur from "./ProfileConducteur";
-import InformationsDetailees from "./InformationsDetailees";
-import Notifications from "./Notifications";
-import "./App.css";
+
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import SupportPage from "./pages/SupportPage";
+import FAQPage from "./pages/FAQPage";
+import PublishRidePage from "./pages/PublishRidePage";
+import AboutPage from "./pages/AboutPage";
+import TermsPage from "./pages/TermsPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import "./styles/App.css"; 
+
 
 function App() {
   return (
@@ -23,16 +23,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/inscription-etudiant" element={<InscriptionEtudiant />} />
-        <Route path="/trajets-quotidiens" element={<TrajetsQuotidiens />} />
-        <Route path="/verification-infos" element={<VerificationInfos />} />
-        <Route path="/verification-finale" element={<VerificationFinale />} />
-        <Route path="/profile-conducteur" element={<ProfileConducteur />} />
-        <Route
-          path="/informations-detaillees"
-          element={<InformationsDetailees />}
-        />
-        <Route path="/notifications" element={<Notifications />} />
+        <Route path="/support" element={<SupportPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/publish" element={<PublishRidePage />} />
+        <Route path="/about" element={<AboutPage />} />
+         <Route path="/terms" element={<TermsPage />} />
+         <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>
     </Router>
   );
